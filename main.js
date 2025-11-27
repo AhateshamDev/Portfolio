@@ -1,6 +1,8 @@
 const navLinks = document.querySelectorAll(".ul-list li a");
 const sections = document.querySelectorAll("section");
 
+// navbar scroll
+
 function removeActive() {
   navLinks.forEach((link) => link.parentElement.classList.remove("active"));
 }
@@ -54,6 +56,8 @@ window.addEventListener("scroll", () => {
   });
 });
 
+// Home page typing effect
+
 const typingElement = document.querySelector(".info-home h3");
 const words = [
   "Full-stack Developer",
@@ -89,6 +93,8 @@ function type() {
     setTimeout(type, 1000);
   }
 }
+
+// dom load
 
 document.addEventListener("DOMContentLoaded", type);
 
